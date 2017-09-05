@@ -7,11 +7,40 @@
     <title>Angular Tutorial 2</title>
     <base href="/">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
-    <h1>Welcome to Angular Tutorial 2</h1>
+<body ng-app="myApp">
+    <header class="row">
+        <div class="col-sm-12 text-center header">
+            <div class="brand"><h1>Welcome to Angular Tutorial 2</h1></div>
+        </div>
+    </header>
+    
+    <div class="row">
+        <div class="container">
+            <div class="col-sm-2 leftMenu">
+                <ul class="nav navbar-default navbar-fixed-side">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/students">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-push-1 mainContent">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="row">
+        <div class="container">
+            <div class="footer col-sm-12 text-center">
+                <p>Created and coded by Anthony Bonello, 2017.</p>
+            </div>
+        </div>
+    </footer>   
     
 </body>
 </html>
