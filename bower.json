@@ -1,0 +1,22 @@
+{
+  "name": "angulartutorial2",
+  "description": "Learning Angular",
+  "main": "index.js",
+  "authors": [
+    "Anthony Bonello"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/abonello/AngularTutorial2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6"
+  }
+}
