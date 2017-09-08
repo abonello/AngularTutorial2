@@ -4,7 +4,7 @@ app.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
     $locationProvider.html5Mode(true);
 
     $routeProvider
-        .when("/home", {
+        .when("/", {
             templateUrl: "views/home.html",
             controller: "homeController"
         })
@@ -17,7 +17,7 @@ app.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
             controller: "studentsController"
         })
         .otherwise({
-            redirectTo: "/home"
+            redirectTo: "/"
         });
     
 }]);
