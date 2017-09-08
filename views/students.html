@@ -1,4 +1,8 @@
 <h1>{{message}}</h1>
-<ul>
-    <li ng-repeat="student in students">{{student.name}}</li>
-</ul>
+    <div class="row" ng-repeat="student in students">
+        <div class="col-xs-5 col-sm-3">{{student.name}} {{student.surname}}</div>
+        <div class="col-xs-7 col-sm-7">
+            <span ng-repeat="course in student.courses">{{course}} &nbsp;</span>
+        </div>
+        <hr>
+    </div>

@@ -54,9 +54,17 @@ app.controller("coursesController", ["$scope", function($scope) {
 app.controller("studentsController", ["$scope", function($scope) {
     $scope.message = "Lists of Students";
     $scope.students = [
-        {"name": "John"},
-        {"name": "Mary"},
-        {"name": "Harry"},
-        {"name": "Bridget"}
+        {"name": "John",
+         "surname": "Smith",
+         "courses": ["HTML", "CSS"]},
+        {"name": "Mary",
+         "surname": "White",
+         "courses": ["HTML", "CSS", "JavaScript"]},
+        {"name": "Harry",
+        "surname": "Black",
+        "courses": ["JavaScript", "AngularJS"]},
+        {"name": "Bridget",
+        "surname": "Green",
+        "courses": ["AngularJS", "Python"]}
     ]
 }]);
