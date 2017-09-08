@@ -1,8 +1,12 @@
-<h1>{{message}}</h1>
+<h2>{{message}}</h2>
 <!-- <ul>
     <li ng-repeat="course in courses">{{course.name}}</li>
 </ul> -->
 <hr>
+<div class="row">
+    <div class="col-sm-2 hidden-xs"><h4>Course</h4></div>
+    <div class="col-sm-10 col-sm-push-1 hidden-xs"><h4>Description</h4></div>
+</div>
 <div class="row" ng-repeat = "course in courses">
     <div class="col-sm-2"><strong>{{course.name}}</strong></div>
     <div class="col-sm-10 col-sm-push-1">{{course.info}}</div>
