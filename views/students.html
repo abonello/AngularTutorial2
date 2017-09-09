@@ -6,7 +6,7 @@
     <div class="row" ng-repeat="student in students">
         <div class="col-xs-5 col-sm-3">{{student.name}} {{student.surname}}</div>
         <div class="col-xs-7 col-sm-7">
-            <span ng-repeat="course in student.courses">{{course}} &nbsp;</span>
+            <span ng-repeat="course in student.courses">{{course[0]}} &nbsp;</span>
         </div>
         <hr>
     </div>

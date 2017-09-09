@@ -56,15 +56,27 @@ app.controller("studentsController", ["$scope", function($scope) {
     $scope.students = [
         {"name": "John",
          "surname": "Smith",
-         "courses": ["HTML", "CSS"]},
+         "age": "22",
+         "town": "Haselmere",
+         "photo": "",
+         "courses": [["HTML", "5"], ["CSS", "3"]]},
         {"name": "Mary",
          "surname": "White",
-         "courses": ["HTML", "CSS", "JavaScript"]},
+         "age": "25",
+         "town": "Godalming",
+         "photo": "",
+         "courses": [["HTML", "5"], ["CSS", "4"], ["JavaScript", "1"]]},
         {"name": "Harry",
         "surname": "Black",
-        "courses": ["JavaScript", "AngularJS"]},
+        "age": "30",
+        "town": "Aldershot",
+        "photo": "",
+        "courses": [["JavaScript", "3"], ["AngularJS", "2"]]},
         {"name": "Bridget",
         "surname": "Green",
-        "courses": ["AngularJS", "Python"]}
+        "age": "28",
+        "town": "Woking",
+        "photo": "",
+        "courses": [["AngularJS", "5"], ["Python", "3"]]}
     ]
 }]);
